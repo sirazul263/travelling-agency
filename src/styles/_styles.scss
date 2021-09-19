@@ -1,0 +1,33 @@
+@import "./variable";
+@import "./_sidebar.scss";
+@import "./navigation";
+@import "./cards";
+
+.sidebar {
+  height: 100vh;
+}
+.text-brand-primary {
+  color: $secondaryColor;
+  font-size: 14px;
+  font-weight: 500;
+}
+.menu-list:first-child {
+  color: blue;
+}
+.new-item {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: black;
+  }
+}
+.button-see-all {
+  color: #2a7be4;
+  font-size: 12px;
+  padding: 5px 20px;
+  border: 1px solid #2a7be4;
+}
